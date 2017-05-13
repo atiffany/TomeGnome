@@ -1,0 +1,56 @@
+<html>
+<head>
+	<link rel = "stylesheet" href = "styles.css">
+</head>
+
+<body>
+	<div class = "gray-box">
+		<h1> Book Index </h1> 
+		<h3> Created by Abigail Tiffany</h3>
+	</div>
+
+What's the most recent book you've read?
+
+<!--will send data to php file-->
+<form action = "books_get.php" method = "post">
+  
+  Title <br>
+  	<input type = "text" name = "title"><br>
+  Author <br>
+  	<input type = "text" name = "author"><br>
+  
+  <!--creates two radio buttons-->
+  <div class = "dropdown">
+  	<input type = "radio" name = "ficNonFic" onclick = "myGenreHide()">Non-Fiction
+  	<input type = "radio" name = "ficNonFic" onclick = "myGenre()">Fiction
+
+<!--creates a drop down menu visible if one of the two radio buttons is selected-->
+  <div id = "myDropdown" class = "dropdown-content">
+  <label for = "genre">Genre</label>
+    <select name = "genre">
+      <option value = "Action Adventure">Action Adventure</option>
+      <option value = "Mystery">Mystery</option>
+      <option value = "SciFi">Sci-Fi</option>
+      <option value = "Fantasy">Fantasy</option>
+      <option value = "Historical Fiction">Historical Fiction</option>
+      <option value = "Romance">Romance</option>
+    </select>
+  </div>
+    
+  </div>
+  <br>
+  
+  Year Published<br>
+  <input type = "text" name = "year"><br>
+  <button type = "submit">Submit</button>
+</form>
+
+<!--JAVASCRIPT to show and hide drop down menu-->
+<script>
+function myGenre(){
+ document.getElementById("myDropdown").classList.add("show");
+}
+function myGenreHide(){
+  document.getElementById("myDropdown").classList.remove("show");
+}
+</script>
