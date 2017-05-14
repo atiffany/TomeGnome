@@ -11,57 +11,73 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /*THIS IS MY CODE*/
 
-body {
-  background-color: lavender;
-  color: gray;
+body{
+  background-image: url(http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/201407-w-most-beautiful-libraries-in-the-world-trinity-college-old-library.jpg?itok=Zpl9S7mB);
+
 }
+.mainPage{
+  position: fixed; 
+  align-content: center;
+  top: 1em;
+  left: 1.5em;
+  bottom: 1em;
+  right: 1.5em;
+  overflow: auto;
+  border-color: #7A6A3D
+  border-width: .5em;
+  border-style: solid;
+  background: #CDBD8D;
+  opacity: 0.90;
+  filter: alpha(opacity=90);/*for IE8 and earlier*/
+}
+.options{
+  background-color: #6B5824;
+}
+/*older code*/
 h1, h3{
-  font-size: 2em;
+   color: #4C3C0E;
   text-align: center;
 }
-.gray-box{
-  background-color: gray;
-  color: lavender;
-  width: 100%;
-  border-style: solid;
-  border-width: .15em;
-  border-color: powderblue;
-  margins: 0em;
-  
+h1{
+  font-size: 2em;
 }
+h3{
+  font-size: 1.25em;
+}
+
 .dropdown{
   position: relative;
   display: inline-block;

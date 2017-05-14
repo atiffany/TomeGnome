@@ -1,23 +1,33 @@
 <html>
 <head>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
 	<link rel = "stylesheet" href = "styles.css">
 </head>
 
 <body>
-	<div class = "gray-box">
+	<div class = "mainPage">
 		<h1> Book Index </h1> 
 		<h3> Created by Abigail Tiffany</h3>
-	</div>
+    <br>
 
-What's the most recent book you've read?
+What's the most recent book you've read?<br>
 
 <!--will send data to php file-->
 <form action = "books_get.php" method = "post">
-  
+  <div class = "row">
+  <div class = "col-xs-4">
   Title <br>
   	<input type = "text" name = "title"><br>
+    </div>
+    <div class = "col-xs-4">
   Author <br>
   	<input type = "text" name = "author"><br>
+    </div>
+    <div class = "col-xs-4">
+     Year Published<br>
+  <input type = "text" name = "year"><br>
+  </div>
+  </div>
   
   <!--creates two radio buttons-->
   <div class = "dropdown">
@@ -36,12 +46,9 @@ What's the most recent book you've read?
       <option value = "Romance">Romance</option>
     </select>
   </div>
-    
   </div>
   <br>
   
-  Year Published<br>
-  <input type = "text" name = "year"><br>
   <button type = "submit">Submit</button>
 </form>
 
@@ -54,3 +61,6 @@ function myGenreHide(){
   document.getElementById("myDropdown").classList.remove("show");
 }
 </script>
+</div>
+</body>
+</html>
